@@ -8,11 +8,11 @@ import type { IconType } from 'react-icons';
 import {
   SiHtml5, SiJavascript, SiReact, SiNextdotjs,
   SiTailwindcss, SiRedux, SiGit, SiGithub,
-  SiFigma, SiPython, SiVite, SiAxios, SiCss, SiReactquery,
+  SiFigma, SiPython, SiVite, SiAxios, SiCss,
 } from 'react-icons/si';
 
 import {
-  TbBrandVscode, TbBrandAzure, TbRoute, TbStack2, TbDatabase,
+  TbBrandVscode, TbBrandAzure,
 } from 'react-icons/tb';
 
 import { FaNetworkWired, FaDatabase, FaServer } from 'react-icons/fa';
