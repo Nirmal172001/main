@@ -5,6 +5,7 @@ import { useLottie } from 'lottie-react';
 import { Zap, Palette, Users } from 'lucide-react';
 import type { IconType } from 'react-icons';
 import devAnimation from '../assets/dev-animation.json';
+import { TanstackIcon, ZustandIcon } from './tech-icons';
 import {
   SiHtml5, SiJavascript, SiReact, SiNextdotjs,
   SiTailwindcss, SiRedux, SiGit, SiGithub,
@@ -14,12 +15,6 @@ import { TbBrandVscode, TbBrandAzure, TbRoute, TbStack2 } from 'react-icons/tb';
 import { FaNetworkWired, FaDatabase, FaServer } from 'react-icons/fa';
 
 // ── Custom image icons ────────────────────────────────────────────────────────
-const TanstackIcon = ({ size, style }: { size?: number | string; style?: React.CSSProperties }) => (
-  <img src="/tanstack.png" width={size ?? 14} height={size ?? 14} style={style} alt="TanStack" />
-);
-const ZustandIcon = ({ size, style }: { size?: number | string; style?: React.CSSProperties }) => (
-  <img src="/zustand.png" width={size ?? 14} height={size ?? 14} style={style} alt="Zustand" />
-);
 
 // ── Full icon map ─────────────────────────────────────────────────────────────
 const ICON_MAP: Record<string, { icon: IconType; color: string }> = {
@@ -31,10 +26,10 @@ const ICON_MAP: Record<string, { icon: IconType; color: string }> = {
   'Next.js':               { icon: SiNextdotjs,                          color: '#ffffff' },
   'Tailwind CSS':          { icon: SiTailwindcss,                        color: '#38bdf8' },
   'Redux Toolkit':         { icon: SiRedux,                              color: '#764abc' },
-  'Zustand':               { icon: ZustandIcon as unknown as IconType,   color: '#f97316' },
-  'TanStack':              { icon: TanstackIcon as unknown as IconType,  color: '#ff4154' },
-  'TanStack Query v5':     { icon: TanstackIcon as unknown as IconType,  color: '#ff4154' },
-  'TanStack Router':       { icon: TanstackIcon as unknown as IconType,  color: '#ff4154' },
+  'Zustand':               { icon: ZustandIcon,                          color: '#f97316' },
+  'TanStack':              { icon: TanstackIcon,                         color: '#ff4154' },
+  'TanStack Query v5':     { icon: TanstackIcon,                         color: '#ff4154' },
+  'TanStack Router':       { icon: TanstackIcon,                         color: '#ff4154' },
   'TanStack Start':        { icon: TbStack2,                             color: '#ff4154' },
   'REST APIs':             { icon: FaNetworkWired,                       color: '#22d3ee' },
   'Axios':                 { icon: SiAxios,                              color: '#5a29e4' },
@@ -47,7 +42,7 @@ const ICON_MAP: Record<string, { icon: IconType; color: string }> = {
   'Figma':                 { icon: SiFigma,                              color: '#f24e1e' },
   'Vite':                  { icon: SiVite,                               color: '#646cff' },
   'AG Grid':               { icon: FaDatabase,                           color: '#3ab54a' },
-  'TanStack Query':        { icon: TanstackIcon as unknown as IconType,  color: '#ff4154' },
+  'TanStack Query':        { icon: TanstackIcon,                         color: '#ff4154' },
   'Responsive Web Design': { icon: SiCss,                                color: '#1572b6' },
   'UI/UX Principles':      { icon: SiFigma,                              color: '#f24e1e' },
   'TbRoute':               { icon: TbRoute,                              color: '#ff4154' },

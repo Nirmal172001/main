@@ -3,6 +3,7 @@ import { motion, useInView, AnimatePresence } from 'framer-motion';
 import { ExternalLink } from 'lucide-react';
 import { FaGithub } from 'react-icons/fa';
 import type { IconType } from 'react-icons';
+import { TanstackIcon, ZustandIcon } from './tech-icons';
 
 // ── Verified icons (confirmed to exist in installed react-icons v5) ──────────
 import {
@@ -16,26 +17,6 @@ import {
 } from 'react-icons/tb';
 
 import { FaNetworkWired, FaDatabase, FaServer } from 'react-icons/fa';
-
-// Add this component near the top of your file, after imports
-const ZustandIcon = ({ size, style }: { size?: number | string; style?: React.CSSProperties }) => (
-  <img
-    src="/zustand.png"
-    width={size ?? 12}
-    height={size ?? 12}
-    style={style}
-    alt="Zustand"
-  />
-);
-const TanstackIcon = ({ size, style }: { size?: number | string; style?: React.CSSProperties }) => (
-  <img
-    src="/tanstack.png"
-    width={size ?? 12}
-    height={size ?? 12}
-    style={style}
-    alt="Tanstack"
-  />
-);
 // ── Shared icon map ───────────────────────────────────────────────────────────
 const ICON_MAP: Record<string, { icon: IconType; color: string }> = {
   'HTML':                  { icon: SiHtml5,        color: '#e34f26' },
@@ -49,11 +30,11 @@ const ICON_MAP: Record<string, { icon: IconType; color: string }> = {
   'Next.js':               { icon: SiNextdotjs,    color: '#ffffff' },
   'Tailwind CSS':          { icon: SiTailwindcss,  color: '#38bdf8' },
   'Redux Toolkit':         { icon: SiRedux,        color: '#764abc' },
-  'Zustand': { icon: ZustandIcon as unknown as IconType, color: '#f97316' },
-  'TanStack Query':        { icon: TanstackIcon as unknown as IconType,   color: '#ff4154' },
-  'TanStack Query v5':     { icon: TanstackIcon as unknown as IconType,   color: '#ff4154' },
-  'TanStack Router':       { icon: TanstackIcon as unknown as IconType,        color: '#ff4154' },
-  'TanStack Start':        { icon: TanstackIcon as unknown as IconType,        color: '#ff4154' },
+  'Zustand':               { icon: ZustandIcon,      color: '#f97316' },
+  'TanStack Query':        { icon: TanstackIcon,     color: '#ff4154' },
+  'TanStack Query v5':     { icon: TanstackIcon,     color: '#ff4154' },
+  'TanStack Router':       { icon: TanstackIcon,     color: '#ff4154' },
+  'TanStack Start':        { icon: TanstackIcon,     color: '#ff4154' },
   'REST APIs':             { icon: FaNetworkWired, color: '#22d3ee' },
   'Axios':                 { icon: SiAxios,        color: '#5a29e4' },
   'Fetch API':             { icon: FaServer,       color: '#60a5fa' },
